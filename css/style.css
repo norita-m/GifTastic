@@ -1,0 +1,35 @@
+body {
+	font-family: Arial, Verdana;
+	background-color: #999999; 
+}
+
+button {
+	color: white;
+	background-color: #3399cc;
+	border-radius: 8px;
+	font-size: 14px;
+	border: none;
+	padding: 8px;
+	margin: 8px;
+}
+
+#gif-form {
+	float: right;
+	margin-right: 200px;
+	margin-top: 100px;
+}
+
+label {
+	color: white;
+}
+
+#addAnimal {
+	background-color: #3399cc;
+	border-radius: 8px;
+	border: none;
+	color: white;
+}
+
+#gifs-view {
+	width: 300px; 
+}

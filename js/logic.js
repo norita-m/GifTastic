@@ -44,11 +44,9 @@ var animals = ["alligator", "dog", "hippopotamus", "rat", "ant", "dolphin", "hor
 
 					//add gifs to page 
 					$("#gifs-view").append("<img src='" + image + "'>");
-					"<img src='https://media4.giphy.com/media/UdkQiQGI0CImI/giphy.gif'>"
-					https://media4.giphy.com/media/UdkQiQGI0CImI/giphy.gif
 					console.log(image);
 				}
-				//<img src="image">
+
 			});
 
 	}
@@ -79,6 +77,23 @@ var animals = ["alligator", "dog", "hippopotamus", "rat", "ant", "dolphin", "hor
 	}
 
 
+	//this function handles new animal button added 
+	$("#addAnimal").on("click", function(event) {
+		event.preventDefault();
+		//grab input from the textbox
+		var animal = $("#animal-input").val().trim();
+		//add new animal from the textbox to our array
+		animals.push(animal);
+		//clear text box after submitting
+		$("#animal-input").val("");
+		console.log("#addAnimal= " + addAnimal)
+		//calling renderButtons to handle the processing of animals array
+		renderButtons();
+	
+
+	});
+
+
 		// Adding a click event listener to all elements with a class of "animal"
 		$(document).on("click", ".animal", displayAnimalInfo);
 
@@ -90,4 +105,10 @@ var animals = ["alligator", "dog", "hippopotamus", "rat", "ant", "dolphin", "hor
 
 
 //MAIN PROCESSES =======================================
+
+
+
+
+
+
 
